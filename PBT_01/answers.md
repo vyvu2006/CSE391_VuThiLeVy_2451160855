@@ -25,6 +25,7 @@
 -Thông tin request & response\
 -Kích thước dữ liệu\
 -Thứ tự load
+![alt text](Network.png)
 
 ### Câu A2 (5đ) — Semantic HTML
 
@@ -105,11 +106,29 @@ Lỗi 14: Dòng 45 — `<p>` trong footer không đóng — Thêm `</p>`
 
 ### Bài B4 (15đ) — Phân tích trang web thật
 
+1.Trang web: shopee.vn\
+3 thẻ semantic HTML5:
+![alt text](B4_1_shopee_nav.png)
+![alt text](B4_1_shopee_header.png)
+![alt text](B4_1_shopee_footer.png)
+
+2.Trang web thegioididong.com
+![alt text](B4_2_table.png)
+-Table đó hiển thị nội dung: bảng giá và thông tin liên quan đến sản phẩm Xiaomi Redmi Note 14 Series trên trang Thế Giới Di Động.\
+-Có dùng `<thead>`,`<tbody>`
+
+3.Trang web thegioididong.com
+![alt text](B4_3_form.png)\
+-Form đó có: +action="/tim-kiem"\
++method: không khai báo
+
+-Input types được dùng:
++type="text"\
++type="submit"
+
 ## PHẦN C — SUY LUẬN (20 điểm)
 
 ### Câu C1 (10đ) — Thiết kế cấu trúc
-
-> **Nguồn tham chiếu:** `tuan_1_html5/01_introduction_html_universe.md`
 
 ```
 <!doctype html> <!--Khai báo HTML5-->
@@ -193,8 +212,6 @@ Lỗi 14: Dòng 45 — `<p>` trong footer không đóng — Thêm `</p>`
 
 ### Câu C2 (10đ) — So sánh & Tranh luận
 
-> **Nguồn tham chiếu:** `tuan_1_html5/01_introduction_html_universe.md`
-
 Quan điểm “dùng `<div>` cho mọi thứ” nghe có vẻ nhanh, nhưng về kỹ thuật lại gây nhiều hạn chế. Thứ nhất là SEO: các công cụ tìm kiếm như Google dựa vào cấu trúc semantic (`<header>`, `<main>`, `<article>`, `<nav>`, …) để hiểu nội dung trang. Nếu mọi thứ đều là `<div>`, bot khó phân biệt đâu là nội dung chính, đâu là điều hướng, dẫn đến xếp hạng kém hơn. Thứ hai là Accessibility: người dùng sử dụng trình đọc màn hình như NVDA cần các thẻ semantic để điều hướng nhanh (nhảy đến navigation, nội dung chính, bài viết…). Nếu chỉ dùng `<div>`, trải nghiệm của họ sẽ kém và khó sử dụng.
 
 Ví dụ cụ thể: một trang tin tức dùng `<article>` cho mỗi bài viết và `<h1>` cho tiêu đề sẽ giúp công cụ tìm kiếm hiểu rõ từng bài độc lập, dễ lập chỉ mục và hiển thị rich results. Đồng thời, screen reader có thể đọc từng bài một cách có cấu trúc, thay vì một “đống div” không phân cấp.
@@ -202,3 +219,7 @@ Ví dụ cụ thể: một trang tin tức dùng `<article>` cho mỗi bài vi�
 Tuy nhiên, `<div>` không phải vô dụng. Nó rất phù hợp trong các trường hợp chỉ phục vụ layout hoặc styling, ví dụ như bọc một nhóm ảnh sản phẩm để áp dụng grid hoặc flexbox, khi phần đó không mang ý nghĩa nội dung riêng biệt.
 
 Tóm lại, semantic HTML không phải là “học thêm cho có”, mà là nền tảng giúp website dễ hiểu hơn cho cả máy tìm kiếm lẫn con người. Dùng `<div>` đúng chỗ thì tốt, nhưng lạm dụng sẽ làm giảm chất lượng tổng thể của trang web.
+
+## 🎬 PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
+https://drive.google.com/file/d/1dTawBjHggetrzCkDhM6z0Bpx2K3rzo7q/view?usp=drive_link
