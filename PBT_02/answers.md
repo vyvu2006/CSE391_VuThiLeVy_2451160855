@@ -255,3 +255,7 @@ pattern="^[0-9]{10,15}$"
 4.2 rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:\
 -Bypass valication(vượt qua kiểm tra)\
 -Injection attack(tấn công chèn mã)
+
+## 🎬 PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
+https://drive.google.com/file/d/1YBufenjMm2MMAZrmghkggXMWB3JCEMYX/view?usp=drive_link
