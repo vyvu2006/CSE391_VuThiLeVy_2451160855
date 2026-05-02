@@ -1,0 +1,78 @@
+/* 1. Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* 2. Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 3. Header */
+header {
+  background: linear-gradient(to right, #4facfe, #00c6ff);
+  color: white;
+  padding: 20px;
+}
+
+/* 4. Navigation */
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+/* Hover */
+nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Active */
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+/* 5. Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/* Cell */
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Header row */
+thead th {
+  background-color: #333;
+  color: white;
+}
+
+/* Zebra */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover row */
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* 6. Footer */
+footer {
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
