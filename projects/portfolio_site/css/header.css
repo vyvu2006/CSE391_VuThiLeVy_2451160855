@@ -1,0 +1,92 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-light);
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+/*logo trái nav links phải */
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: auto;
+  color: var(--color-primary);
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+/*links*/
+nav a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 1 rem;
+  position: relative;
+}
+
+/*hover underline*/
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: 0.35;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+/*mobile menu*/
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+
+  nav a {
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  /* toggle menu, checkbox được check → hiện menu*/
+
+  .menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+}
