@@ -1,0 +1,50 @@
+/*hero centering*/
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+.hero h1 span {
+  color: #fbbf24;
+}
+.hero p {
+  font-size: 1.25 rem;
+  margin-bottom: 30px;
+}
+/*CTS button*/
+.cta-button {
+  background: white;
+  color: var(--color-primary);
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+/*hover effect*/
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
