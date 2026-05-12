@@ -1,0 +1,44 @@
+.container {
+  width: 960px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  overflow: hidden; /* clear float */
+}
+
+/* ===== CÁCH 1: border-box ===== */
+.box * {
+  box-sizing: border-box;
+}
+
+.box .sidebar {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightblue;
+}
+
+.box .content {
+  width: 660px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightgreen;
+}
+
+/* ===== CÁCH 2: content-box ===== */
+.no-box .sidebar {
+  width: 258px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightcoral;
+}
+
+.no-box .content {
+  width: 598px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  background: lightyellow;
+}
