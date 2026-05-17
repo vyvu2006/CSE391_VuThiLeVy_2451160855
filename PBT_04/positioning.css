@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+}
+
+/* Product Card */
+.product-card {
+  position: relative;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* HOT Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 60px;
+  height: 60px;
+  background: red;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+/* Sticky Sidebar */
+.sidebar {
+  position: sticky;
+  top: 80px;
+
+  width: 250px;
+  height: fit-content;
+
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #333;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* tạo khoảng dài để scroll */
+.long-content {
+  margin-top: 30px;
+  line-height: 2;
+}
