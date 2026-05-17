@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background: $bg-color;
+}
+
+/* HEADER */
+.header {
+  background: $secondary-color;
+  color: $white;
+  padding: $spacing-md;
+
+  @include flex-center;
+  justify-content: space-between;
+
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+/* LAYOUT */
+.container {
+  padding: $spacing-md;
+}
+
+.sidebar,
+.ads-bar {
+  display: none;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+/* CARD */
+.card {
+  background: $white;
+  border-radius: $radius-md;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: $spacing-md;
+
+  @include card-shadow;
+
+  transition: all 0.3s ease;
+
+  // Nested block 1
+  .card-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // Nested block 2
+  .card-title {
+    font-size: 18px;
+    margin: $spacing-sm 0;
+  }
+
+  button {
+    background: $primary-color;
+    color: $white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $radius-sm;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $secondary-color;
+      transform: scale(1.05);
+    }
+  }
+
+  // Parent selector
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  // Parent selector
+  &.featured {
+    border: 3px solid gold;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background: $secondary-color;
+  color: $white;
+  text-align: center;
+  padding: $spacing-lg;
+}
+
+/* TABLET */
+@include respond-to(tablet) {
+  body {
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: $spacing-md;
+  }
+
+  .sidebar {
+    display: block;
+    background: $white;
+    padding: $spacing-md;
+    border-radius: $radius-sm;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@include respond-to(desktop) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    gap: $spacing-md;
+  }
+
+  .sidebar,
+  .ads-bar {
+    display: block;
+    background: $white;
+    padding: $spacing-md;
+    border-radius: $radius-sm;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: $spacing-md;
+  }
+}
