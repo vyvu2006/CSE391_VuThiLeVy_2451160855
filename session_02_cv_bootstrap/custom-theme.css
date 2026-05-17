@@ -1,0 +1,29 @@
+/* Bootstrap overrides */
+:root {
+  --bs-primary: #14b8a6;
+  --bs-secondary: #5f4e42;
+  --bs-border-radius: 0.75rem;
+}
+
+/* Global */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5f1eb;
+  color: #5f4e42;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: #f8f6f3;
+}
+
+/* Buttons */
+.custom-btn {
+  background: #d9b9a8;
+  color: white;
+}
+
+/* Shared utilities */
+.section-padding {
+  padding: 100px 0;
+}
