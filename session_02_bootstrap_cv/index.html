@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Bootstrap Conversion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="custom-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container-fluid px-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#"> designs by levy </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <a href="#" class="btn custom-btn ms-lg-4"> Let's Chat </a>
+        </div>
+      </div>
+    </nav>
+
+          <!-- CV SECTION -->
+<section class="cv-section py-5 d-flex align-items-center">
+
+  <div class="container">
+    <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="cv-title">My Resume</h2>
+
+            <p class="cv-subtitle">Creative Designer & Front-End Developer</p>
+          </div>
+        </div>
+
+    <!-- HEADER -->
+    <div class="row align-items-center mb-5 ">
+
+      <div class="col-lg-8 ">
+
+        <h1 class="cv-name">
+          Vu Thi Le Vy
+        </h1>
+
+        <p class="cv-role">
+          Software Engineer
+        </p>
+
+      </div>
+
+      <div class="col-lg-4">
+
+        <ul class="list-unstyled contact-list">
+
+          <li class="mb-2">
+            <i class="bi bi-calendar-event me-2"></i>
+            May 29, 2006
+          </li>
+
+          <li class="mb-2">
+            <i class="bi bi-telephone me-2"></i>
+            0385982721
+          </li>
+
+          <li class="mb-2">
+            <i class="bi bi-envelope me-2"></i>
+            vuthilevy2006@gmail.com
+          </li>
+
+          <li class="mb-2">
+            <i class="bi bi-geo-alt me-2"></i>
+            Hanoi, Vietnam
+          </li>
+
+          <li>
+            <i class="bi bi-github me-2"></i>
+            https://github.com/vyvu2006/CSE391_VuThiLeVy_2451160855
+          </li>
+        </ul>
+      </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV SECTION -->
+<section class="cv-section py-5">
+
+  <div class="container">
+
+    <div class="row g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-4">
+
+        <!-- PROFILE -->
+        <div class="cv-card mb-4">
+
+          <img
+            src="images/profile.jpg"
+            class="img-fluid rounded mb-4"
+            alt=""
+          >
+
+          <h3 class="section-heading">
+            Profile
+          </h3>
+
+          <p class="cv-text">
+            Passionate front-end developer with experience building
+            responsive websites using HTML, CSS, Bootstrap, and JavaScript.
+          </p>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="cv-card">
+
+          <h3 class="section-heading">
+            Skills
+          </h3>
+
+          <div class="d-flex flex-wrap gap-2">
+
+            <span class="badge skill-badge">
+              HTML5
+            </span>
+
+            <span class="badge skill-badge">
+              CSS3
+            </span>
+
+            <span class="badge skill-badge">
+              Bootstrap 5
+            </span>
+
+            <span class="badge skill-badge">
+              JavaScript
+            </span>
+
+            <span class="badge skill-badge">
+              Responsive Design
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-8">
+
+        <!-- EDUCATION -->
+        <div class="cv-card mb-5">
+
+          <h3 class="section-heading mb-4">
+            Education
+          </h3>
+
+          <div class="timeline-item mb-4">
+
+            <h4 class="timeline-title">
+              University Name
+            </h4>
+
+            <p class="timeline-subtitle">
+              Thuy Loi University • 2024 - Present
+            </p>
+
+            <p class="cv-text">
+              Major: Information System
+            </p>
+
+            <p class="cv-text">
+              Learning web development, UI/UX,
+              and software engineering.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="cv-card mb-5">
+
+          <h3 class="section-heading mb-4">
+            Experience
+          </h3>
+
+          <div class="timeline-item">
+
+            <h4 class="timeline-title">
+              Freelance Designer
+            </h4>
+
+            <p class="timeline-subtitle">
+              Self-employed • 2024 - Present
+            </p>
+
+            <p class="cv-text">
+              Designed portfolio websites and branding
+              materials for clients.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="cv-card">
+
+          <h3 class="section-heading mb-4">
+            Projects
+          </h3>
+
+          <div class="timeline-item mb-4">
+
+            <h4 class="timeline-title">
+              Portfolio Website
+            </h4>
+
+            <p class="cv-text">
+              Responsive personal portfolio built
+              with Bootstrap 5.
+            </p>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <h4 class="timeline-title">
+              E-commerce UI
+            </h4>
+
+            <p class="cv-text">
+              Modern shopping interface with
+              responsive layouts.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- CONTACT -->
+          <div class="col-lg-4">
+            <h3 class="footer-title mb-4">Contact</h3>
+
+            <a href="#" class="footer-link"> vuthilevy2006@gmail.com </a>
+          </div>
+
+          <!-- ABOUT -->
+          <div class="col-lg-4">
+            <h3 class="footer-title mb-4">About</h3>
+
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="footer-link"> Portfolio </a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#" class="footer-link"> Services </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Let's Chat </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- FOLLOW -->
+          <div class="col-lg-4">
+            <h3 class="footer-title mb-4">Follow</h3>
+
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="footer-link"> Facebook </a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#" class="footer-link"> Instagram </a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#" class="footer-link"> Pinterest </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Linkedin </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p class="copyright-text mb-2">
+              ©2026 Designs by Levy. All right reserved.
+            </p>
+
+            <p class="copyright-text">Designed by Levy @designsbylevy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
