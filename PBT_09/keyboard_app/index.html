@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Accessibility App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 tabindex="0">Keyboard Gallery App</h1>
+
+      <!-- GALLERY -->
+
+      <div class="gallery">
+        <button id="prevBtn" aria-label="Previous image">←</button>
+
+        <img
+          id="galleryImage"
+          src="https://picsum.photos/id/1015/700/400"
+          alt="Gallery Image"
+          tabindex="0"
+        />
+
+        <button id="nextBtn" aria-label="Next image">→</button>
+      </div>
+
+      <!-- THUMBNAILS -->
+
+      <div class="thumbs" id="thumbs"></div>
+
+      <!-- INFO -->
+
+      <div class="info">
+        <p tabindex="0">⌨ Shortcuts:</p>
+
+        <ul>
+          <li tabindex="0">← → : Change image</li>
+          <li tabindex="0">1-9 : Jump to image</li>
+          <li tabindex="0">Space : Play/Pause slideshow</li>
+          <li tabindex="0">Ctrl + K : Open command palette</li>
+          <li tabindex="0">Escape : Close modal/palette</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal hidden" id="imageModal">
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+      </div>
+    </div>
+
+    <!-- COMMAND PALETTE -->
+
+    <div class="palette hidden" id="palette">
+      <div class="palette-box">
+        <input
+          type="text"
+          id="commandInput"
+          placeholder="Type a command..."
+          aria-label="Command palette input"
+        />
+
+        <ul id="commandList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 700px;
+  max-width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.thumb.active {
+  border: 3px solid #222;
+  opacity: 1;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info li {
+  margin: 10px 0;
+}
+
+/* FOCUS */
+
+button:focus,
+input:focus,
+img:focus,
+li:focus,
+h1:focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 3px;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content img {
+  width: 900px;
+  max-width: 90%;
+  border-radius: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* PALETTE */
+
+.palette {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 100px;
+}
+
+.palette-box {
+  width: 500px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.palette-box input {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.palette-box ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  background: white;
+}
+
+.palette-box li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.palette-box li:hover,
+.palette-box li:focus {
+  background: #f3f3f3;
+}
