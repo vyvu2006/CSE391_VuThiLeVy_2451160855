@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  background: #fafafa;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background: orange;
+  border: none;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Skeleton loader */
+.skeleton {
+  height: 80px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
