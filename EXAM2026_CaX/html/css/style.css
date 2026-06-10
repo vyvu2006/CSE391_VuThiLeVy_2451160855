@@ -1,0 +1,43 @@
+body {
+  background: #eef2f7;
+  font-family: Arial, sans-serif;
+}
+
+.header-box {
+  background: linear-gradient(to right, #1e4ed8, #3b82f6);
+
+  border-radius: 24px;
+}
+
+.card {
+  border-radius: 24px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 14px;
+  height: 55px;
+}
+
+.table th {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.status-green {
+  background: #d1fae5;
+  color: #16a34a;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+.status-red {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
